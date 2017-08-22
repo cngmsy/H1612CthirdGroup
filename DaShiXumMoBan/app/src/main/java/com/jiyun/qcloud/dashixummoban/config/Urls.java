@@ -22,4 +22,6 @@ public class Urls {
     public static final String IMGCODE = "http://reg.cntv.cn/simple/verificationCode.action";
     //邮箱注册
     public static final String EMAILREGISTER = "https://reg.cntv.cn/api/register.action";
+
+    public static final String EVEN="http://123.206.14.104:8080/TakeoutService/goods?sellerId=101";
 }

@@ -18,7 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".main.GouwuActivity"></activity>
+        <activity android:name=".ui.activity.GouActivity"></activity>
+        <activity android:name=".ui.activity.JieActivity"/>
+        <activity android:name=".ui.activity.GouwuActivity"/>
+        <meta-data android:name="design_width" android:value="1080">
+        </meta-data>
+        <meta-data android:name="design_height" android:value="1920">
+        </meta-data>
     </application>
 
 </manifest>
