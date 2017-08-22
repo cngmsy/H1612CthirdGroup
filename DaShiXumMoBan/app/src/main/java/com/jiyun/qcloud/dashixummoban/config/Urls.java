@@ -7,7 +7,7 @@ package com.jiyun.qcloud.dashixummoban.config;
 
 public class Urls {
 
-    //服务器地址
+  /*//服务器地址
     private static final String BASEURL = "http://www.ipanda.com/kehuduan/";
 
     //首页
@@ -21,5 +21,10 @@ public class Urls {
     //获取图片验证码
     public static final String IMGCODE = "http://reg.cntv.cn/simple/verificationCode.action";
     //邮箱注册
-    public static final String EMAILREGISTER = "https://reg.cntv.cn/api/register.action";
+    public static final String EMAILREGISTER = "https://reg.cntv.cn/api/register.action";*/
+
+    //服务器地址
+    private static final String BASEURL = "http://123.206.14.104:8080/";
+    //首页
+    public static final String ELEMEHOME = BASEURL + "TakeoutService/home?latitude=116.30142&longitude=40.05087";
 }

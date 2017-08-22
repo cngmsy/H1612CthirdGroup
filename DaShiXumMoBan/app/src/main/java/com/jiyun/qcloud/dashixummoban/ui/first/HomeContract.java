@@ -2,6 +2,7 @@ package com.jiyun.qcloud.dashixummoban.ui.first;
 
 import com.jiyun.qcloud.dashixummoban.base.IBasePresenter;
 import com.jiyun.qcloud.dashixummoban.base.IBaseView;
+import com.jiyun.qcloud.dashixummoban.entity.HomeBean;
 import com.jiyun.qcloud.dashixummoban.entity.PandaHome;
 
 /**
@@ -12,7 +13,7 @@ import com.jiyun.qcloud.dashixummoban.entity.PandaHome;
 public class HomeContract {
 
     interface View extends IBaseView<Presenter> {
-        void showHomeListData(PandaHome pandaHome);
+        void showHomeListData(HomeBean homeBean);
         void playVideo();
         void loadWebView();
     }

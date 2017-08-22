@@ -134,6 +134,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         // TODO: add setContentView(...) invocation
         ButterKnife.bind(this);
+        getWindow().setSoftInputMode( WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
     }
 
     @OnClick({R.id.main_ZongHe, R.id.main_DongTan, R.id.main_FaXian, R.id.main_WoDe, R.id.Main_RadioGroup})
