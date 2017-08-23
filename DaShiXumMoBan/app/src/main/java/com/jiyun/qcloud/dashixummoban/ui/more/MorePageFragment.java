@@ -1,13 +1,18 @@
 package com.jiyun.qcloud.dashixummoban.ui.more;
 
 
+import com.jiyun.qcloud.dashixummoban.base.BaseFragment;
+
 import android.graphics.Color;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.jiyun.qcloud.dashixummoban.R;
 import com.jiyun.qcloud.dashixummoban.adapter.MoreTVAdapter;
@@ -15,15 +20,25 @@ import com.jiyun.qcloud.dashixummoban.adapter.MorelvAdapter;
 import com.jiyun.qcloud.dashixummoban.base.BaseFragment;
 import com.jiyun.qcloud.dashixummoban.entity.more.Geng;
 import com.jiyun.qcloud.dashixummoban.ui.more.more.MoreMv;
-import com.jude.rollviewpager.RollPagerView;
-import com.jude.rollviewpager.hintview.ColorPointHintView;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import com.jiyun.qcloud.dashixummoban.main.GouwuActivity;
+
+import com.jude.rollviewpager.RollPagerView;
+import com.jude.rollviewpager.hintview.ColorPointHintView;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.Unbinder;
+import retrofit2.http.HEAD;
+
+import static com.jiyun.qcloud.dashixummoban.manager.ActivityCollector.getActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -112,4 +127,5 @@ public class MorePageFragment extends BaseFragment implements MoreMv.View {
     public void setPresenter(MoreMv.Presenter presenter) {
         this.presenter = presenter;
     }
+
 }

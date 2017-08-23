@@ -1,7 +1,7 @@
 package com.jiyun.qcloud.dashixummoban.ui.first;
 
 
-import com.jiyun.qcloud.dashixummoban.entity.PandaHome;
+import com.jiyun.qcloud.dashixummoban.entity.HomeBean;
 import com.jiyun.qcloud.dashixummoban.modle.dataModel.IPandaHomeModel;
 import com.jiyun.qcloud.dashixummoban.modle.dataModel.PandaHomeModelImpl;
 import com.jiyun.qcloud.dashixummoban.modle.net.callback.NetWorkCallBack;
@@ -27,10 +27,10 @@ public class HomePresenter implements HomeContract.Presenter {
     @Override
     public void start() {
         homeView.showProgress();
-        homeModel.loadHomeList(new NetWorkCallBack<PandaHome>() {
+        homeModel.loadHomeList(new NetWorkCallBack<HomeBean>() {
             @Override
-            public void onSuccess(PandaHome pandaHome) {
-                homeView.showHomeListData(pandaHome);
+            public void onSuccess(HomeBean homeBean) {
+                homeView.showHomeListData(homeBean);
                 homeView.dimissProgress();
             }
 

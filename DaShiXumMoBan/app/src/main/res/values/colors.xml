@@ -9,10 +9,18 @@
     <color name="bai">#fff</color>
     <color name="hiu">#cfcaca</color>
 
-
+    <color name="grey_home">#edefee</color>
+    <color name="tv">#FF5B595A</color>
+    <color name="yellow">#FFE6EF4E</color>
+    <color name="list_item_focus">#0a000000</color>
+    <color name="white_alpha_percent_45">#73ffffff</color>
+    <color name="text_gray">#7b403b37</color>
+    <color name="base_red">#fffb6655</color>
+    <color name="default_line_color">#e6e6e6</color>
     <color name="biz_audio_progress_bg">#00b2ff</color>
     <color name="biz_audio_progress_first">#ffffff</color>
     <color name="biz_audio_progress_second">#6b6666</color>
+
     <color name="default_bg">#aa000000</color>
     <color name="select_color">#00b2ff</color>
     <color name="normal_color">#ffffffff</color>

@@ -4,12 +4,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <VideoView
-        android:id="@+id/surface_view"
-        android:layout_centerInParent="true"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
+        android:layout_height="wrap_content">
+        <!--<ImageView
+            android:id="@+id/image"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"/>-->
+        <VideoView
+            android:id="@+id/surface_view"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
 
+</RelativeLayout>
 
     <TextView
         android:id="@+id/item_movetitle"
