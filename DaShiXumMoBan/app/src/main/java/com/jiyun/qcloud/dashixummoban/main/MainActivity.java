@@ -20,10 +20,8 @@ import com.jiyun.qcloud.dashixummoban.manager.FragmentMager;
 import com.jiyun.qcloud.dashixummoban.ui.first.FirstPageFragment;
 import com.jiyun.qcloud.dashixummoban.ui.first.HomePresenter;
 import com.jiyun.qcloud.dashixummoban.ui.more.MorePageFragment;
-import com.jiyun.qcloud.dashixummoban.ui.more.more.MoreMvPresenter;
 import com.jiyun.qcloud.dashixummoban.ui.mycenter.MyPageFragment;
 import com.jiyun.qcloud.dashixummoban.ui.order.OrderPageFragment;
-import com.jiyun.qcloud.dashixummoban.ui.order.dingdan.DingDanPresenter;
 import com.orhanobut.logger.Logger;
 
 import butterknife.BindView;
@@ -145,15 +143,13 @@ public class MainActivity extends BaseActivity {
                 FragmentMager.getInstance().start(R.id.container, FirstPageFragment.class,false).build();
                 break;
             case R.id.main_DongTan:
-                OrderPageFragment orderPageFragment = (OrderPageFragment) FragmentMager.getInstance().start(R.id.container, OrderPageFragment.class, false).build();
-                new DingDanPresenter(orderPageFragment);
+                FragmentMager.getInstance().start(R.id.container, OrderPageFragment.class,false).build();
                 break;
             case R.id.main_FaXian:
                 FragmentMager.getInstance().start(R.id.container, MyPageFragment.class,false).build();
                 break;
             case R.id.main_WoDe:
-                MorePageFragment morePageFragment = (MorePageFragment) FragmentMager.getInstance().start(R.id.container, MorePageFragment.class, false).build();
-                new MoreMvPresenter(morePageFragment);
+                FragmentMager.getInstance().start(R.id.container, MorePageFragment.class,false).build();
                 break;
             case R.id.Main_RadioGroup:
                 break;

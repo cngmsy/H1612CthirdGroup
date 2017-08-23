@@ -116,7 +116,7 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 
-.idea/libraries/
+.ideabraries/
 MVP.iml
 app/app.iml
 core/core.iml

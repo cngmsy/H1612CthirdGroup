@@ -7,7 +7,7 @@
 
     <com.zhy.autolayout.AutoLinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/media_controller_view_height"
+        android:layout_height="20dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/biz_video_bar_bg"
         android:orientation="horizontal">

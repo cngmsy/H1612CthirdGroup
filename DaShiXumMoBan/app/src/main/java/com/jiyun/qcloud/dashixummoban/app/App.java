@@ -29,5 +29,6 @@ public class App extends  BaseApplication implements Thread.UncaughtExceptionHan
     @Override
     public void uncaughtException(Thread t, Throwable e) {
         t.setDefaultUncaughtExceptionHandler(this);
+
     }
 }

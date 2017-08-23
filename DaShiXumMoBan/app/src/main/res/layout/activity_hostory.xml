@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jiyun.qcloud.dashixummoban.main.HostoryActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff00"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ss_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/et_ssousuo"
+            android:drawableLeft="@mipmap/home_search"
+            android:hint="输入商家、商品名称"
+            android:textColorHint="#fff"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/clear_keyword_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:src="@drawable/login_icon_edit_clear"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="搜索"
+            android:textSize="18sp" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/search_history_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="4dp"
+            android:text="历史搜索"
+            android:textSize="12sp" />
+
+        <ListView
+            android:id="@+id/search_history_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/default_line_color"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@drawable/list_item_selector"></ListView>
+
+        <Button
+            android:id="@+id/clear_history_btn"
+            android:layout_width="210dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_btn_selector"
+            android:text="清除历史搜索记录"
+            android:textSize="14sp" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

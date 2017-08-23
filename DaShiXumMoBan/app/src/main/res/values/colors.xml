@@ -3,12 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
-    <color name="hen">#5b595a</color>
-    <color name="lan">#40c6ff</color>
-    <color name="bai">#fff</color>
-    <color name="hiu">#cfcaca</color>
-
     <color name="grey_home">#edefee</color>
     <color name="tv">#FF5B595A</color>
     <color name="yellow">#FFE6EF4E</color>
@@ -27,5 +21,8 @@
     <color name="divider_color">#55504a</color>
     <!--special color-->
     <color name="black_a10_color">#1a000000</color>
-
+    <color name="hen">#5b595a</color>
+    <color name="lan">#40c6ff</color>
+    <color name="bai">#fff</color>
+    <color name="hiu">#cfcaca</color>
 </resources>

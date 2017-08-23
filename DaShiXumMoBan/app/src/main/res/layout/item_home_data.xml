@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginTop="15px"
+        android:src="@drawable/item_logo" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="30px"
+                android:background="@color/yellow" />
+
+            <TextView
+                android:id="@+id/item_home_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="饿了么"
+                android:textColor="@color/tv"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18px"
+            android:text="月售243单" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="￥0元起送/配送费￥9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="556米/33分钟" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10px"
+            android:background="#FFE3E3E3" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:background="@color/yellow">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="减"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10px"
+                android:text="在线支付满49元减10元，满89减16"
+                android:textSize="13sp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:background="@color/yellow">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="赠"
+                    android:textColor="#fff" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10px"
+                android:text="满45元赠九珍果汁饮料"
+                android:textSize="13sp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
