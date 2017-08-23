@@ -7,7 +7,7 @@
     <com.jude.rollviewpager.RollPagerView
         android:id="@+id/rollpagerView"
         android:layout_width="match_parent"
-        android:layout_height="450px"></com.jude.rollviewpager.RollPagerView>
+        android:layout_height="550px"></com.jude.rollviewpager.RollPagerView>
 
     <GridView
         android:id="@+id/gridview"
