@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion '26.0.0'
     defaultConfig {
-        applicationId "com.jiyun.qcloud.dashixummoban"
+        applicationId "com.example.administrator.my_812"
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
@@ -49,4 +49,6 @@ dependencies {
     compile 'com.android.support:support-v4:26.+'
     testCompile 'junit:junit:4.12'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.jude:rollviewpager:1.2.9'
+    compile 'com.zhy:autolayout:1.4.5'
 }
