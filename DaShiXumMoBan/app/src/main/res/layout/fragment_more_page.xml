@@ -2,9 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.jiyun.qcloud.dashixummoban.ui.more.MorePageFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+ 
+    <ListView
+        android:id="@+id/lv_more_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

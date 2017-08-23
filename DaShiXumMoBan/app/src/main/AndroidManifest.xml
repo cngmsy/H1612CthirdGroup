@@ -113,4 +113,6 @@
         <activity android:name=".main.HostoryActivity"/>
     </application>
 
+
+
 </manifest>

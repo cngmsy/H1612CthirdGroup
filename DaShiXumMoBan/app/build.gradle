@@ -10,7 +10,6 @@ android {
         targetGenDir 'src/main/java'
     }
     defaultConfig {
-        applicationId "com.jiyun.qcloud.dashixummoban"
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
