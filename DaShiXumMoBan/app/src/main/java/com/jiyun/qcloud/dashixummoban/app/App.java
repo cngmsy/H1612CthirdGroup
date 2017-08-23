@@ -11,6 +11,11 @@ import com.umeng.socialize.UMShareAPI;
 
 public class App extends  BaseApplication implements Thread.UncaughtExceptionHandler{
 
+
+
+
+
+
     public static BaseActivity mBaseActivity;
     public static BaseFragment lastfragment;
     {
