@@ -1,6 +1,6 @@
-apply plugin: 'com.android.application'
+﻿apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
-apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
 android {
     compileSdkVersion 26
     buildToolsVersion '26.0.0'
@@ -53,7 +53,8 @@ dependencies {
     compile 'com.github.orhanobut:logger:1.12+'
     compile 'com.android.support:support-v4:26.+'
     testCompile 'junit:junit:4.12'
+    compile 'com.jude:rollviewpager:1.4.6'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
-    compile 'com.zhy:autolayout:1.4.3'
-    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'org.greenrobot:greendao:3.2.2' // add library
+    compile files('libs/AMap3DMap_5.3.0_AMapNavi_5.3.0_AMapSearch_5.3.0_AMapLocation_3.5.0_20170815.jar')
 }

@@ -1,6 +1,7 @@
 package com.jiyun.qcloud.dashixummoban.modle.dataModel;
 
 
+import com.jiyun.qcloud.dashixummoban.entity.HomeBean;
 import com.jiyun.qcloud.dashixummoban.entity.PandaHome;
 import com.jiyun.qcloud.dashixummoban.modle.net.callback.NetWorkCallBack;
 
@@ -10,5 +11,5 @@ import com.jiyun.qcloud.dashixummoban.modle.net.callback.NetWorkCallBack;
 
 public interface IPandaHomeModel extends BaseModel {
 
-    void loadHomeList(NetWorkCallBack<PandaHome> callback);
+    void loadHomeList(NetWorkCallBack<HomeBean> callback);
 }
