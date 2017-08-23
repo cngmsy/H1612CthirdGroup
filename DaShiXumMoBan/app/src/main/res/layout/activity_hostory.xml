@@ -67,7 +67,6 @@
 
         <ListView
             android:id="@+id/search_history_lv"
-            style="@style/common_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:divider="@color/default_line_color"

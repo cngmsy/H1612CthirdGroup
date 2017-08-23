@@ -24,6 +24,7 @@ import com.jiyun.qcloud.dashixummoban.base.BaseFragment;
 import com.jiyun.qcloud.dashixummoban.entity.HomeBean;
 import com.jiyun.qcloud.dashixummoban.entity.HomeBeans;
 import com.jiyun.qcloud.dashixummoban.entity.PandaHome;
+import com.jiyun.qcloud.dashixummoban.main.GouwuActivity;
 import com.jiyun.qcloud.dashixummoban.main.HostoryActivity;
 import com.jiyun.qcloud.dashixummoban.main.MapActivity;
 import com.jiyun.qcloud.dashixummoban.utils.ScreenUtils;
@@ -64,6 +65,7 @@ public class FirstPageFragment extends BaseFragment implements XRecyclerView.Loa
     private RollPagerView rollPagerView;
     private List<String> mList = new ArrayList<>();
     private List<HomeBeans.HeadBean.PromotionListBean> promotionListBeen;
+    private List<HomeBeans.BodyBean.SellerBean> list2;
 
     @Override
     protected int getLayoutRes() {
@@ -123,6 +125,13 @@ public class FirstPageFragment extends BaseFragment implements XRecyclerView.Loa
 
     }
 
+    private void setRoll() {
+        rollPagerView.setPlayDelay(3000);//*播放间隔
+        rollPagerView.setAnimationDurtion(500);//透明度
+        rollViewpagerAdapter adapter = new rollViewpagerAdapter(promotionListBeen);
+        rollPagerView.setAdapter(adapter);//配置适配器
+    }
+
     @Override
     public void showHomeListData(HomeBean homeBean) {
         String data = homeBean.getData();
@@ -132,7 +141,7 @@ public class FirstPageFragment extends BaseFragment implements XRecyclerView.Loa
         setRoll();
         List<HomeBeans.HeadBean.CategorieListBean> categorieList = homeBeans.getHead().getCategorieList();
         List<HomeBeans.BodyBean> body = homeBeans.getBody();
-        List<HomeBeans.BodyBean.SellerBean> list2 = new ArrayList<HomeBeans.BodyBean.SellerBean>();
+        list2 = new ArrayList<HomeBeans.BodyBean.SellerBean>();
         for (int i = 0; i < homeBeans.getBody().size(); i++) {
             list2.add(homeBeans.getBody().get(i).getSeller());
             mList.add(String.valueOf(homeBeans.getBody().get(i).getRecommendInfos()));
@@ -146,16 +155,11 @@ public class FirstPageFragment extends BaseFragment implements XRecyclerView.Loa
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                
+                Intent intent=new Intent(getActivity(), GouwuActivity.class);
+                intent.putExtra("name", list2.get(i-1).getName());
+                startActivity(intent);
             }
         });
-    }
-
-    private void setRoll() {
-        rollPagerView.setPlayDelay(3000);//*播放间隔
-        rollPagerView.setAnimationDurtion(500);//透明度
-        rollViewpagerAdapter adapter = new rollViewpagerAdapter(promotionListBeen);
-        rollPagerView.setAdapter(adapter);//配置适配器
     }
 
     @Override

@@ -2,7 +2,6 @@ package com.jiyun.qcloud.dashixummoban.ui.first;
 
 
 import com.jiyun.qcloud.dashixummoban.entity.HomeBean;
-import com.jiyun.qcloud.dashixummoban.entity.PandaHome;
 import com.jiyun.qcloud.dashixummoban.modle.dataModel.IPandaHomeModel;
 import com.jiyun.qcloud.dashixummoban.modle.dataModel.PandaHomeModelImpl;
 import com.jiyun.qcloud.dashixummoban.modle.net.callback.NetWorkCallBack;

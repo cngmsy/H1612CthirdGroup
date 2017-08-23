@@ -12,7 +12,7 @@
     <com.zhy.autolayout.AutoLinearLayout
         android:id="@+id/linear"
         android:layout_width="fill_parent"
-        android:layout_height="90px"
+        android:layout_height="220px"
         android:background="#FF6BBAE8"
         android:orientation="horizontal"
         android:layout_alignParentTop="true"
@@ -41,7 +41,7 @@
         <EditText
             android:id="@+id/editText"
             android:layout_width="wrap_content"
-            android:layout_height="50px"
+            android:layout_height="100px"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:layout_weight="2"

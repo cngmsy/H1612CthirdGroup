@@ -3,7 +3,6 @@ package com.jiyun.qcloud.dashixummoban.ui.first;
 import com.jiyun.qcloud.dashixummoban.base.IBasePresenter;
 import com.jiyun.qcloud.dashixummoban.base.IBaseView;
 import com.jiyun.qcloud.dashixummoban.entity.HomeBean;
-import com.jiyun.qcloud.dashixummoban.entity.PandaHome;
 
 /**
  * Created by chj on 2017/8/21.
