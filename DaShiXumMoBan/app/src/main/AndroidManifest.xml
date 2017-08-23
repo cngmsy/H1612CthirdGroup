@@ -33,6 +33,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+       
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="05507f2dd301185be1e14648a35602c6">
+            </meta-data>
+
         <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,6 +47,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".main.LoginActivity"></activity>
         <meta-data android:name="design_width" android:value="1080">
         </meta-data>
@@ -105,12 +113,16 @@
         <!-- 通过AndroidManifest配置AppKey和AppSecret，如果你选择通过代码配置，则不需要配置以下meta-data -->
         <meta-data android:name="Mob-AppKey" android:value="2060d0bc3040e"/>
         <meta-data android:name="Mob-AppSecret" android:value="b1c2daf2f6b17e301d3912bb2f92fa6f"/>
+
         <activity android:name=".main.GouwuActivity"></activity>
         <activity android:name=".ui.activity.GouActivity"></activity>
         <activity android:name=".ui.activity.JieActivity"/>
         <activity android:name=".ui.activity.GouwuActivity"/>
-        <activity android:name=".main.MapActivity"/>
-        <activity android:name=".main.HostoryActivity"/>
+
+   
+        <activity android:name=".main.HostoryActivity" />
+        <activity android:name=".main.MapActivity"></activity>
+
     </application>
 
 

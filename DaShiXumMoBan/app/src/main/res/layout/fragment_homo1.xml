@@ -27,6 +27,7 @@
             android:id="@+id/list2_item"
             android:layout_width="match_parent"
             android:layout_height="85px"
+
             android:background="#DCDBDB"
             android:text="aaaaaa"
             android:gravity="center"

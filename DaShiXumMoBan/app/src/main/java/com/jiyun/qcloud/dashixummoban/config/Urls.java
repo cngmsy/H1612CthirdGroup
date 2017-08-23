@@ -8,6 +8,7 @@ package com.jiyun.qcloud.dashixummoban.config;
 public class Urls {
 
 
+
     //服务器地址
     private static final String BASEURL = "http://123.206.14.104:8080/";
     //首页
@@ -23,6 +24,12 @@ public class Urls {
     //获取图片验证码
     public static final String IMGCODE = "http://reg.cntv.cn/simple/verificationCode.action";
     //邮箱注册
-    public static final String EMAILREGISTER = "https://reg.cntv.cn/api/register.action";
+
     public static final String EVEN="http://123.206.14.104:8080/TakeoutService/goods?sellerId=101";
+
+
+    public static final String EMAILREGISTER = "https://reg.cntv.cn/api/register.action";
+
+
+
 }
