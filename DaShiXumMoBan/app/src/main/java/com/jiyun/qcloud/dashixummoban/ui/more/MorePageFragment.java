@@ -1,15 +1,15 @@
 package com.jiyun.qcloud.dashixummoban.ui.more;
 
 
-import com.jiyun.qcloud.dashixummoban.base.BaseFragment;
-
 import android.graphics.Color;
 
 import android.content.Intent;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -18,6 +18,7 @@ import com.jiyun.qcloud.dashixummoban.R;
 import com.jiyun.qcloud.dashixummoban.adapter.MoreTVAdapter;
 import com.jiyun.qcloud.dashixummoban.adapter.MorelvAdapter;
 import com.jiyun.qcloud.dashixummoban.base.BaseFragment;
+
 import com.jiyun.qcloud.dashixummoban.entity.more.Geng;
 import com.jiyun.qcloud.dashixummoban.ui.more.more.MoreMv;
 
@@ -25,8 +26,6 @@ import com.jiyun.qcloud.dashixummoban.ui.more.more.MoreMv;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import com.jiyun.qcloud.dashixummoban.main.GouwuActivity;
 
 import com.jude.rollviewpager.RollPagerView;
@@ -66,6 +65,7 @@ public class MorePageFragment extends BaseFragment implements MoreMv.View {
         if (presenter != null) {
             presenter.start();
         }
+
     }
 
     @Override
@@ -127,5 +127,4 @@ public class MorePageFragment extends BaseFragment implements MoreMv.View {
     public void setPresenter(MoreMv.Presenter presenter) {
         this.presenter = presenter;
     }
-
 }

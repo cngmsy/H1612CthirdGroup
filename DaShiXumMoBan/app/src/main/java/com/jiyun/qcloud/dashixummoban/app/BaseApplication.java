@@ -7,6 +7,7 @@ import android.os.StrictMode;
 import android.support.multidex.MultiDexApplication;
 
 import com.jiyun.qcloud.dashixummoban.manager.ActivityCollector;
+import com.mob.MobApplication;
 import com.orhanobut.logger.AndroidLogTool;
 import com.orhanobut.logger.Logger;
 
@@ -19,7 +20,7 @@ import com.orhanobut.logger.Logger;
  *
  */
 
-public class BaseApplication extends MultiDexApplication {
+public class BaseApplication extends MobApplication {
     public static class Config{
         public static final boolean DEVELOPER_MORE=false;
     }

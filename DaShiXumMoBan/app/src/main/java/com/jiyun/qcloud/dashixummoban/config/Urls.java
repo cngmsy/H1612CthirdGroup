@@ -7,9 +7,11 @@ package com.jiyun.qcloud.dashixummoban.config;
 
 public class Urls {
 
-/*    //服务器地址
-    private static final String BASEURL = "http://www.ipanda.com/kehuduan/";
 
+    //服务器地址
+    private static final String BASEURL = "http://123.206.14.104:8080/";
+    //首页
+    public static final String ELEMEHOME = BASEURL + "TakeoutService/home?latitude=116.30142&longitude=40.05087";
     //首页
     public static final String PANDAHOME = BASEURL+"PAGE14501749764071042/index.json";
     //熊猫直播
@@ -21,19 +23,12 @@ public class Urls {
     //获取图片验证码
     public static final String IMGCODE = "http://reg.cntv.cn/simple/verificationCode.action";
     //邮箱注册
-<<<<<<< HEAD
     public static final String EMAILREGISTER = "https://reg.cntv.cn/api/register.action";
-*/
+
     //    订单   http://123.206.14.104:8080/TakeoutService/order?userId=3626
     public static final String DINGDAN = "http://123.206.14.104:8080/TakeoutService/home?latitude=116.30142&longitude=40.05087";
     //    视屏
     public static final String TV = "https://ticket-api-m.mtime.cn/discovery/trailerList.api";
 
-    public static final String EMAILREGISTER = "https://reg.cntv.cn/api/register.action";
-
     public static final String EVEN="http://123.206.14.104:8080/TakeoutService/goods?sellerId=101";
-    //服务器地址
-    private static final String BASEURL = "http://123.206.14.104:8080/";
-    //首页
-    public static final String ELEMEHOME = BASEURL + "TakeoutService/home?latitude=116.30142&longitude=40.05087";
 }
