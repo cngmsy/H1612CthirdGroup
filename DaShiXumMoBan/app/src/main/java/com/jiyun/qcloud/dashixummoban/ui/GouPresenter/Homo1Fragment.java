@@ -399,6 +399,9 @@ public class Homo1Fragment extends BaseFragment implements GouContract.View {
         edit.putString("hhh",s);
         edit.commit();
     }
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // TODO: inflate a fragment view
