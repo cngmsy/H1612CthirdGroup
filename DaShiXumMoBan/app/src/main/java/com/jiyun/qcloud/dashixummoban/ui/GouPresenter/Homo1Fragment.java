@@ -91,6 +91,7 @@ public class Homo1Fragment extends BaseFragment implements GouContract.View {
         DaoMaster master=new DaoMaster(li.getReadableDb());
         DaoSession daoSession = master.newSession();
         gouDao = daoSession.getGouDao();
+
         String he = preferences.getString("hhh", "0");
         if (he!=null){
         if (he.equals("0")){
@@ -101,6 +102,10 @@ public class Homo1Fragment extends BaseFragment implements GouContract.View {
             }
         }else {
             tvBezierCurveShoppingCartCount.setVisibility(View.GONE);
+
+        }else {
+            tvBezierCurveShoppingCartCount.setVisibility(View.GONE);
+
         }
 
     }

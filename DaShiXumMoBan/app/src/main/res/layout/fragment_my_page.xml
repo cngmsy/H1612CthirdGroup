@@ -18,14 +18,6 @@
             android:layout_marginLeft="15px"
             android:textColor="#FFF"
             android:textSize="18sp" />
-        <ImageView
-            android:id="@+id/tv_user_setting"
-            android:layout_width="90px"
-            android:layout_height="90px"
-            android:layout_alignParentRight="true"
-
-            android:layout_marginRight="15px"
-           />
 
         >
 

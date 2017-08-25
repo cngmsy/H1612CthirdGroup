@@ -23,11 +23,19 @@ public class Urls {
     //获取图片验证码
     public static final String IMGCODE = "http://reg.cntv.cn/simple/verificationCode.action";
     //邮箱注册
+
+    public static final String EVEN="http://123.206.14.104:8080/TakeoutService/goods?sellerId=101";
+
+
     public static final String EMAILREGISTER = "https://reg.cntv.cn/api/register.action";
+<<<<<<< HEAD
     //    订单   http://123.206.14.104:8080/TakeoutService/order?userId=3626
     public static final String DINGDAN = "http://123.206.14.104:8080/TakeoutService/home?latitude=116.30142&longitude=40.05087";
     //    视屏
     public static final String TV = "https://ticket-api-m.mtime.cn/discovery/trailerList.api";
+=======
 
-    public static final String EVEN="http://123.206.14.104:8080/TakeoutService/goods?sellerId=101";
+>>>>>>> 190370f0500e76cb2a3812a03e0a3006cd99a6e5
+
+
 }
