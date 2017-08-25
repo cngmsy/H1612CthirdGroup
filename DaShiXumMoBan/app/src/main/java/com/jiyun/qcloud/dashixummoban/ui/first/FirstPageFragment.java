@@ -39,6 +39,9 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 
+import static com.jiyun.qcloud.dashixummoban.manager.ActivityCollector.getActivity;
+
+
 /**
  * Created by chj on 2017/8/20.
  */
