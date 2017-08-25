@@ -22,9 +22,6 @@ import butterknife.Unbinder;
  * A simple {@link Fragment} subclass.
  */
 public class MorePageFragment extends BaseFragment {
-
-    @BindView(R.id.aaaaa)
-    TextView aaaaa;
     Unbinder unbinder;
 
     @Override
@@ -34,13 +31,7 @@ public class MorePageFragment extends BaseFragment {
 
     @Override
     protected void initData() {
-       aaaaa.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent intent=new Intent(getActivity(), GouwuActivity.class);
-               startActivity(intent);
-           }
-       });
+
     }
 
     @Override
@@ -51,14 +42,6 @@ public class MorePageFragment extends BaseFragment {
     @Override
     public void setBundle(Bundle bundle) {
 
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // TODO: inflate a fragment view
-        View rootView = super.onCreateView(inflater, container, savedInstanceState);
-        unbinder = ButterKnife.bind(this, rootView);
-        return rootView;
     }
 
     @Override

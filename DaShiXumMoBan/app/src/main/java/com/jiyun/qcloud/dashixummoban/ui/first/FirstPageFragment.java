@@ -155,9 +155,12 @@ public class FirstPageFragment extends BaseFragment implements XRecyclerView.Loa
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent=new Intent(getActivity(), GouwuActivity.class);
-                intent.putExtra("name", list2.get(i-1).getName());
-                startActivity(intent);
+                if (i!=10){
+                    Intent intent=new Intent(getActivity(), GouwuActivity.class);
+                    intent.putExtra("name", list2.get(i-1).getName());
+                    startActivity(intent);
+                }
+
             }
         });
     }
