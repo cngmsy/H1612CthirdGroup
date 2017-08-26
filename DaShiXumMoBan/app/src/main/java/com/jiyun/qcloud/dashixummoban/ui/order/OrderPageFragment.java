@@ -27,6 +27,12 @@ import butterknife.Unbinder;
  */
 
 public class OrderPageFragment extends BaseFragment  implements DingDan.View {
+	
+	
+	
+	
+	
+	
     @BindView(R.id.lv_order)
     ListView lvOrder;
     Unbinder unbinder;
