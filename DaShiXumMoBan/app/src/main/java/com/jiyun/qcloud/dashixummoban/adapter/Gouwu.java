@@ -23,6 +23,9 @@ public class Gouwu extends BaseAdapter {
     private final Context context;
     private final List<Gou> list;
 
+	
+	
+	
     public Gouwu(Context context, List<Gou> gous) {
         this.context = context;
         this.list = gous;
