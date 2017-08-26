@@ -11,6 +11,14 @@ import android.graphics.PointF;
 public class BezierTypeEvaluator implements TypeEvaluator<PointF> {
     private PointF mControllPoint;
 
+    /*
+    * 我已提交 了医学动心
+    * 
+    *
+    * */
+
+
+
     public BezierTypeEvaluator(PointF mControllPoint) {
         this.mControllPoint = mControllPoint;
     }
