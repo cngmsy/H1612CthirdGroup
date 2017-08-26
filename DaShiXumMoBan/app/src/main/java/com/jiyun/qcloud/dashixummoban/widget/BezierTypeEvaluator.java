@@ -13,7 +13,7 @@ public class BezierTypeEvaluator implements TypeEvaluator<PointF> {
 
     /*
     * 我已提交 了医学动心
-    * 
+    *
     *
     * */
 
