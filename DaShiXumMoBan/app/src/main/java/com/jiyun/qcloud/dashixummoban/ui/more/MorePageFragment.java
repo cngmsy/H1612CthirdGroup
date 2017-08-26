@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.jiyun.qcloud.dashixummoban.R;
-import com.jiyun.qcloud.dashixummoban.adapter.MoreTVAdapter2;
+import com.jiyun.qcloud.dashixummoban.adapter.MoreTVAdapter;
 import com.jiyun.qcloud.dashixummoban.base.BaseFragment;
 import com.jiyun.qcloud.dashixummoban.entity.more.Geng;
 import com.jiyun.qcloud.dashixummoban.shi.VideoBean;
@@ -31,6 +31,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.Unbinder;
 
 /**
@@ -48,7 +50,7 @@ public class MorePageFragment extends BaseFragment implements MoreMv.View {
     private List<String> image = new ArrayList<>();
     private ArrayList<VideoBean> mList;
     private MAdapter mAdapter;
-    MoreTVAdapter2 tvAdapter;
+    MoreTVAdapter tvAdapter;
     int a;
     private List<Geng.DataBean.TrailersBean> trailers;
 
@@ -75,7 +77,7 @@ public class MorePageFragment extends BaseFragment implements MoreMv.View {
         View view1 = LayoutInflater.from(getActivity()).inflate(R.layout.item_more_rollpv, null);
         RollPagerView pagerView = view1.findViewById(R.id.item_head_rollpagerview);
         pagerView.setPlayDelay(2000);
-        tvAdapter = new MoreTVAdapter2(getActivity(),image);
+        tvAdapter = new MoreTVAdapter(getActivity(),image);
         pagerView.setAdapter(tvAdapter);
         lvMoreTv.addHeaderView(view1);
     }

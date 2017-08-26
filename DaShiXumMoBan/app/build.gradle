@@ -65,4 +65,5 @@ dependencies {
     compile 'org.greenrobot:greendao:3.2.0'
     compile 'com.jude:rollviewpager:1.4.6'
     compile files('libs/AMap3DMap_5.3.0_AMapNavi_5.3.0_AMapSearch_5.3.0_AMapLocation_3.5.0_20170815.jar')
+
 }

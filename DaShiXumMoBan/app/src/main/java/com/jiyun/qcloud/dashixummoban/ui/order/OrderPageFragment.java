@@ -7,7 +7,7 @@ import android.widget.ListView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.jiyun.qcloud.dashixummoban.R;
-import com.jiyun.qcloud.dashixummoban.adapter.OrderAdapter3;
+import com.jiyun.qcloud.dashixummoban.adapter.OrderAdapter;
 import com.jiyun.qcloud.dashixummoban.base.BaseFragment;
 import com.jiyun.qcloud.dashixummoban.entity.dingdan.BodyBean;
 import com.jiyun.qcloud.dashixummoban.entity.dingdan.Infomaction;
@@ -32,7 +32,7 @@ public class OrderPageFragment extends BaseFragment  implements DingDan.View {
     Unbinder unbinder;
     DingDan.Presenter presenter;
     List<BodyBean> list = new ArrayList<>();
-    private OrderAdapter3 adapter;
+    private OrderAdapter adapter;
 
     @Override
     protected int getLayoutRes() {
@@ -48,7 +48,7 @@ public class OrderPageFragment extends BaseFragment  implements DingDan.View {
     }
 
     private void initAdapter() {
-        adapter = new OrderAdapter3(getActivity(),list);
+        adapter = new OrderAdapter(getActivity(),list);
         lvOrder.setAdapter(adapter);
     }
 
