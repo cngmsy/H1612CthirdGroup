@@ -102,10 +102,6 @@ public class Homo1Fragment extends BaseFragment implements GouContract.View {
             }
         }else {
             tvBezierCurveShoppingCartCount.setVisibility(View.GONE);
-
-        }else {
-            tvBezierCurveShoppingCartCount.setVisibility(View.GONE);
-
         }
 
     }

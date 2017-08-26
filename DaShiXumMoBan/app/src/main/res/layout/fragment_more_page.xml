@@ -3,5 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.jiyun.qcloud.dashixummoban.ui.more.MorePageFragment">
-
+    <ListView
+        android:id="@+id/lv_more_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

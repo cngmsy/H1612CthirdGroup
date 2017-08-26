@@ -26,15 +26,8 @@
         <TextView
             android:id="@+id/list2_item"
             android:layout_width="match_parent"
-            android:layout_height="85px"
-<<<<<<< HEAD
-=======
+            android:layout_height="85px"/>
 
->>>>>>> 190370f0500e76cb2a3812a03e0a3006cd99a6e5
-            android:background="#DCDBDB"
-            android:text="aaaaaa"
-            android:gravity="center"
-            />
     </com.zhy.autolayout.AutoFrameLayout>
     <com.zhy.autolayout.AutoFrameLayout
         android:id="@+id/fly_bezier_curve_shopping_cart"
