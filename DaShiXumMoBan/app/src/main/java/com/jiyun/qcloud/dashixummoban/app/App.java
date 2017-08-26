@@ -8,6 +8,12 @@ import com.umeng.socialize.UMShareAPI;
 /**
  * Created by chj on 2017/8/20.
  */
+ 
+ 
+ 
+ 
+ 
+ 
 
 public class App extends  BaseApplication implements Thread.UncaughtExceptionHandler{
 
